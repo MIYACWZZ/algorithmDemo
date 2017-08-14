@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Tool {
-    public static int[] randomList(int n){
+    public static int[] randomList(int n){      //随机产生大小为n的整型数组
         int listDemo[] = new int[n];
 
         Random random = new Random();
@@ -13,7 +13,7 @@ public class Tool {
         return listDemo;
     }
 
-    public static boolean isSorted(int[] listDemo){
+    public static boolean isSorted(int[] listDemo){         //判断是否完成正确的排序（由小到大）
         for (int i = 1; i < listDemo.length; i++) {
             if(listDemo[i] < listDemo[i-1])
                 return false;
